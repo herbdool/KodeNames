@@ -12,11 +12,11 @@ var spyMasterMode = false;
 var sessionData = [];
 var customData = [];
 
-var COLOR_RED = "#ff0000";
-var COLOR_YELLOW = "#ffff00";
-var COLOR_BLUE = "#00eeee";
-var COLOR_BLACK = "#808080";
-var COLOR_GREEN = "#009000";
+var COLOR_RED = "#FF5C5C"; // rgb(255,92,92)
+var COLOR_YELLOW = "#FFD81E"; // rgb(255,216,30)
+var COLOR_BLUE = "#79BACA"; // rgb(121,186,202)
+var COLOR_BLACK = "#808080"; 
+var COLOR_GREEN = "#BBDB9B";
 
 //init
 $("#seed").keyup(function() {
@@ -156,20 +156,20 @@ function updateScore() {
 		redScore = 0;
 		$('div.word').each(function() {
 			var color = $(this).css('background-color');
-			if (color === 'rgb(0, 238, 238)') {
+			if (color === 'rgb(121, 186, 202)') {
 				blueScore++;
 			}
-			if (color === 'rgb(255, 0, 0)') {
+			if (color === 'rgb(255, 92, 92)') {
 				redScore++;
 			}
 		});
 	} else {
 		$('div.word').each(function() {
 			var color = $(this).css('background-color');
-			if (color === 'rgb(0, 238, 238)') {
+			if (color === 'rgb(121, 186, 202)') {
 				blueScore--;
 			}
-			if (color === 'rgb(255, 0, 0)') {
+			if (color === 'rgb(255, 92, 92)') {
 				redScore--;
 			}
 		});
