@@ -101,13 +101,13 @@ function createNewGame() {
 		teams.push(COLOR_RED);
 		// document.getElementById("team").style.color = COLOR_RED;
 		// document.getElementById("team").innerHTML = "RED";
-		$('#board').addClass('redStarts').removeClass('blueStarts');
+		$('#name').addClass('redStarts').removeClass('blueStarts');
 
 	} else {
 		teams.push(COLOR_BLUE);
 		// document.getElementById("team").style.color = COLOR_BLUE;
 		// document.getElementById("team").innerHTML = "BLUE";
-		$('#board').addClass('blueStarts').removeClass('redStarts');
+		$('#name').addClass('blueStarts').removeClass('redStarts');
 	}
 
 	// add neturals 

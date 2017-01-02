@@ -22,15 +22,24 @@ html {
 }
 
 button, input, span#first {
-	font-size : 1.3em;	
+	font-size : 1em;
 }
-
+button {
+  background: #ddd;
+  border: 1px solid #999;
+}
+button:hover {
+  background: #eee;
+  cursor: pointer;
+}
+select {
+  background: #ddd;
+}
 #board {
 	width: 100%;
 	position : absolute;
 	bottom : 5px;
-	left : 2%;
-	right : 1%;
+	left : 0;
 	top : 48px;
 }
 
@@ -43,13 +52,10 @@ button, input, span#first {
 	text-align : center;
 	vertical-align : middle;
 	cursor : pointer;
-	border : 2px #DDDDDD solid;
-	font-weight : bold;
-	width : 19%;
-	height : 99%;
+	width : 20%;
+	height : 100%;
 	display : inline-block;
-	line-height : 99%;
-
+	line-height : 100%;
 }
 
 #board div.word div {
@@ -75,39 +81,41 @@ button, input, span#first {
 	box-align:center;
 
 	height : 100%;
-
 }
 
+#header {
+	display: flex;
+	align-items: center;
+}
 #header a {
 	font-size:20px;
 	margin-left: 5px;
 	margin-right: 8px;
 	font-weight: bold;
 }
-#header {
-	display: flex;
-	align-items: center;
+#header #name {
+	padding: 4px 6px;
 }
 #spymaster {
 	margin-left: 5px;
 }
 
 #seed {
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 
 #gameMode {
 	margin-left: 5px;
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 
 #reset {
 	margin-left: 5px;
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 #google_translate_element {
 	margin-left: 5px;
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 .ada {
   height: 1px;
@@ -118,19 +126,15 @@ button, input, span#first {
  
 }
 
-.redStarts,
-.blueStarts {
-	border-left-style: solid;
-}
 .redStarts {
-	border-left: #FF5C5C;
+	background: #FF5C5C;
 }
 .blueStarts{
-	border-left: #79BACA;
+	background: #79BACA;
 }
 
 #redScore,
-#blueScore {	
+#blueScore {
 	font-size: 23px;
 	flex-grow: 1;
 	text-align: center;
