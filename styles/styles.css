@@ -29,8 +29,7 @@ button, input, span#first {
 	width: 100%;
 	position : absolute;
 	bottom : 5px;
-	left : 2%;
-	right : 1%;
+	left : 0;
 	top : 48px;
 }
 
@@ -43,7 +42,6 @@ button, input, span#first {
 	text-align : center;
 	vertical-align : middle;
 	cursor : pointer;
-	border : 2px #DDDDDD solid;
 	font-weight : bold;
 	width : 19%;
 	height : 99%;
@@ -53,6 +51,7 @@ button, input, span#first {
 }
 
 #board div.word div {
+	border : 2px #DDDDDD solid;
 
 	/* Internet Explorer 10 */
 	display:-ms-flexbox;
@@ -75,7 +74,6 @@ button, input, span#first {
 	box-align:center;
 
 	height : 100%;
-
 }
 
 #header {
