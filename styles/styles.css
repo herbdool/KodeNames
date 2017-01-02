@@ -1,10 +1,20 @@
-a:link {color: black;}      /* unvisited link */
-a:visited {color: black}   /* visited link */
-.word:hover {color: black; font-size: 1.5em; background: lightgrey;}     /* mouse over link */
-a:active {color: black;}    /* selected link */
+a:link {
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+.word:hover {
+	color: black;
+	background: lightgrey;
+}
+a:active {
+	color: black;
+}
 
 html {
-	font-family : "Verdana";
+	font-family : Verdana, Arial, Helvetica, sans-serif;
 }
 
 #board {
@@ -109,24 +119,26 @@ button, input, span#first {
  
 }
 
-.redStarts{
-	border-left: #ff0000;
+.redStarts,
+.blueStarts {
 	border-left-style: solid;
+}
+.redStarts {
+	border-left: #FF5C5C;
 }
 .blueStarts{
-	border-left: #00eeee;
-	border-left-style: solid;
+	border-left: #79BACA;
 }
 
-#redScore{
-	color: #ff0000;
+#redScore,
+#blueScore {	
 	font-size: 23px;
 	flex-grow: 1;
 	text-align: center;
 }
+#redScore {
+	color: #FF5C5C;
+}
 #blueScore{
-	text-align: center;
-	color: #00eeee;
-	font-size: 23px;
-	flex-grow: 1;
+	color: #79BACA;
 }
