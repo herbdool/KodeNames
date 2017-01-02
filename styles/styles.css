@@ -1,3 +1,6 @@
+html {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+}
 a:link {
 	color: black;
 	text-decoration: none;
@@ -12,15 +15,27 @@ a:visited {
 a:active {
 	color: black;
 }
-
-html {
-	font-family : Verdana, Arial, Helvetica, sans-serif;
+button, input, span#first {
+	font-size : 1em;
+}
+button {
+  background: #ddd;
+  border: 1px solid #999;
+}
+button:hover {
+  background: #eee;
+  cursor: pointer;
+}
+select {
+  background: #ddd;
 }
 
 /**
  * Header
  */
 #header-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 10px;
 }
 #header {
@@ -81,24 +96,9 @@ html {
  */
 #board {
 	font-size : 1.4em;
-}
-
-button, input, span#first {
-	font-size : 1em;
-}
-button {
-  background: #ddd;
-  border: 1px solid #999;
-}
-button:hover {
-  background: #eee;
-  cursor: pointer;
-}
-select {
-  background: #ddd;
-}
-#board {
 	width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: calc(100vh - 7vh);
   display: flex;
   flex-wrap: wrap;
