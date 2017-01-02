@@ -83,11 +83,11 @@ function createNewGame() {
 		var word = sessionData[randomNumber];
 		removeItem(sessionData, randomNumber);
 		wordsSelected.push(word);
-		trs[i % 5] += "<div class=\"word\" id=\'" + i + "\' onclick=\"clicked(\'" + i + "\')\"><div><a href=\"#\"><span class=\"ada\"></span>" + word + "</a></div></div>";
+		trs[i % 5] += "<div class=\"word\" id=\'" + i + "\' onclick=\"clicked(\'" + i + "\')\"><a href=\"#\"><span class=\"ada\"></span>" + word + "</a></div>";
 	}
 	//<a href="#"><span class="ada">Washington stimulates economic growth </span>Read me</a>
 	for (var i = 0; i < trs.length; i++) {
-		document.getElementById("board").innerHTML += '<div class="row">' + trs[i] + '</div>'
+		document.getElementById("board").innerHTML += trs[i]
 	}
 
 	//create teams
@@ -182,10 +182,10 @@ function updateScore() {
 	}
 	$('#redScore').text(redScore);
 	$('#blueScore').text(blueScore);
-	if(redScore === 0){
+	if(redScore === 0 && blueScore >= 1){
 		$('#redScore').text('Winner!');
 	}
-	if(blueScore === 0){
+	if(blueScore === 0 && redScore >= 1){
 		$('#blueScore').text('Winner!');
 	}
 }

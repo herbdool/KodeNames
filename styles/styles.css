@@ -17,6 +17,68 @@ html {
 	font-family : Verdana, Arial, Helvetica, sans-serif;
 }
 
+/**
+ * Header
+ */
+#header-wrapper {
+  padding: 10px;
+}
+#header {
+	display: flex;
+	align-items: center;
+}
+#header a {
+	font-size:20px;
+	margin-left: 5px;
+	margin-right: 8px;
+	font-weight: bold;
+}
+#header #name {
+	padding: 4px 6px;
+}
+.redStarts {
+	background: #FF5C5C;
+}
+.blueStarts{
+	background: #79BACA;
+}
+
+#redScore,
+#blueScore {
+	font-size: 23px;
+	flex-grow: 1;
+	text-align: center;
+}
+#redScore {
+	color: #FF5C5C;
+}
+#blueScore{
+	color: #79BACA;
+}
+#spymaster {
+	margin-left: 5px;
+}
+
+#seed {
+	margin-right: 5px;
+}
+
+#gameMode {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#reset {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+#google_translate_element {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/**
+ * Board
+ */
 #board {
 	font-size : 1.4em;
 }
@@ -37,86 +99,24 @@ select {
 }
 #board {
 	width: 100%;
-	position : absolute;
-	bottom : 5px;
-	left : 0;
-	top : 48px;
-}
-
-#board div.row {
-	height : 20%;
+  height: calc(100vh - 7vh);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #board div.word {
-	position : relative;
 	text-align : center;
-	vertical-align : middle;
 	cursor : pointer;
 	width : 20%;
-	height : 100%;
-	display : inline-block;
-	line-height : 100%;
-}
-
-#board div.word div {
-
-	/* Internet Explorer 10 */
-	display:-ms-flexbox;
-	-ms-flex-pack:center;
-	-ms-flex-align:center;
-
-	/* Firefox */
-	display:-moz-box;
-	-moz-box-pack:center;
-	-moz-box-align:center;
-
-	/* Safari, Opera, and Chrome */
-	display:-webkit-box;
-	-webkit-box-pack:center;
-	-webkit-box-align:center;
-
-	/* W3C */
-	display:box;
-	box-pack:center;
-	box-align:center;
-
-	height : 100%;
-}
-
-#header {
-	display: flex;
+	height : 20%;
+	display : flex;
 	align-items: center;
 }
-#header a {
-	font-size:20px;
-	margin-left: 5px;
-	margin-right: 8px;
-	font-weight: bold;
-}
-#header #name {
-	padding: 4px 6px;
-}
-#spymaster {
-	margin-left: 5px;
+#board div.word a {
+  display: block;
+  width: 100%;
 }
 
-#seed {
-	margin-right: 5px;
-}
-
-#gameMode {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-#reset {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-#google_translate_element {
-	margin-left: 5px;
-	margin-right: 5px;
-}
 .ada {
   height: 1px;
   width: 1px;
@@ -126,22 +126,4 @@ select {
  
 }
 
-.redStarts {
-	background: #FF5C5C;
-}
-.blueStarts{
-	background: #79BACA;
-}
 
-#redScore,
-#blueScore {
-	font-size: 23px;
-	flex-grow: 1;
-	text-align: center;
-}
-#redScore {
-	color: #FF5C5C;
-}
-#blueScore{
-	color: #79BACA;
-}
