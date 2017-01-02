@@ -44,7 +44,6 @@ button, input, span#first {
 	vertical-align : middle;
 	cursor : pointer;
 	border : 2px #DDDDDD solid;
-	border-radius : 5px;
 	font-weight : bold;
 	width : 19%;
 	height : 99%;
