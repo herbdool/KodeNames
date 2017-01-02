@@ -42,8 +42,7 @@ button, input, span#first {
 	text-align : center;
 	vertical-align : middle;
 	cursor : pointer;
-	font-weight : bold;
-	width : 19%;
+	width : 20%;
 	height : 99%;
 	display : inline-block;
 	line-height : 99%;
