@@ -78,15 +78,18 @@ button, input, span#first {
 
 }
 
+#header {
+	display: flex;
+	align-items: center;
+}
 #header a {
 	font-size:20px;
 	margin-left: 5px;
 	margin-right: 8px;
 	font-weight: bold;
 }
-#header {
-	display: flex;
-	align-items: center;
+#header #name {
+	padding: 4px 6px;
 }
 #spymaster {
 	margin-left: 5px;
@@ -118,15 +121,11 @@ button, input, span#first {
  
 }
 
-.redStarts,
-.blueStarts {
-	border-left-style: solid;
-}
 .redStarts {
-	border-left: #FF5C5C;
+	background: #FF5C5C;
 }
 .blueStarts{
-	border-left: #79BACA;
+	background: #79BACA;
 }
 
 #redScore,
